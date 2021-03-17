@@ -24,11 +24,11 @@ int win(vector<vector<char>> board)
             }
             if (count == 4)
             {
-                cout << start << " won via upright" << endl;
+                cout << start << " won via downright" << endl;
                 return start == 'X' ? 1 : 2;
             }
             count = 0;
-            for (int k = i, l = j; k > i-4 && l > j-4 && k >= 0 && l >= 0; k--, l--)
+            for (int k = i, l = j; k < i-4 && l < j+4 && k >= 0 && l < 7; k--, l++)
             {
                 if (board[k][l] == start)
                 {
@@ -37,7 +37,7 @@ int win(vector<vector<char>> board)
             }
             if (count == 4)
             {
-                cout << start << " won via downleft" << endl;
+                cout << start << " won via upright" << endl;
                 return start == 'X' ? 1 : 2;
             }
             count = 0;
@@ -78,29 +78,37 @@ int main()
     while (!win(board))
     {
         int col;
-        cout << "Choose your column: ";
-        cin >> col;
         bool set = false;
-        for (int i = 5; i >= 0; i--)
-        {
-            if (board[i][col] == ' ')
+        while (!set) {
+            cout << "Choose your column: ";
+            cin >> col;
+
+            for (int i = 5; i >= 0; i--)
             {
-                set = true;
-                board[i][col] = (oneturn ? 'X' : 'O');
-                break;
+                if (board[i][col] == ' ')
+                {
+                    set = true;
+                    board[i][col] = (oneturn ? 'X' : 'O'  );
+                    break;
+                }
+            }
+            if (!set) {
+                cout << "Invalid Placement. ";
             }
         }
+        cout << endl;
         for (int i = 0; i < 6; i++)
         {
+            cout << " | ";
             for (int j = 0; j < 7; j++)
             {
                 cout << board[i][j] << " | ";
             }
             cout << endl;
         }
-        cout << endl;
+        cout << endl << endl;
         oneturn = !oneturn;
-        cout << win(board) << endl;
+        //cout << win(board) << endl;
     }
-    cout << win(board) << endl;
+    //cout << win(board) << endl;
 }
