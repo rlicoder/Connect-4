@@ -50,7 +50,7 @@ int win(vector<vector<char>> board)
             }
             if (count == 4)
             {
-                cout << start << " won via rightleft" << endl;
+                cout << start << " won via downup" << endl;
                 return start == 'X' ? 1 : 2;
             }
             count = 0;
@@ -63,7 +63,7 @@ int win(vector<vector<char>> board)
             }
             if (count == 4)
             {
-                cout << start << " won by downup" << endl;
+                cout << start << " won by leftright" << endl;
                 return start == 'X' ? 1 : 2;
             }
         }
