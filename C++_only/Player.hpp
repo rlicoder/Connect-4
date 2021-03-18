@@ -5,8 +5,14 @@ using namespace std;
 
 class Player
 {
-    string name;
-    int wins;
-    int losses;
-    vector<string> gameHist;
+    private:
+        string name;
+        int wins;
+        int losses;
+        vector<string> gameHist;
+
+    public:
+        //default
+        Player();
+
 }

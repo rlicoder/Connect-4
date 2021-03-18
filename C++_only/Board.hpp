@@ -18,6 +18,8 @@ class Board
         Board(string moves);
 
         void displayBoard();
+
+        bool place(int col, bool oneturn);
 };
 
 #endif
