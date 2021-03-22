@@ -50,6 +50,12 @@ void Board::displayBoard()
     cout << endl;
 }
 
+// Will get the slot on the board
+char Board::getSlot(int row, int col) {
+    if (row < rowSze && col < colSze)
+    return board[row][col];
+}
+
 bool Board::place(int col, bool oneturn)
 {
     bool set = false;
@@ -68,3 +74,4 @@ bool Board::place(int col, bool oneturn)
     }
     return set;
 }
+
