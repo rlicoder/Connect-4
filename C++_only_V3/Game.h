@@ -27,6 +27,7 @@ class Game
         Player player1;
         Player player2;
         bool gamestate;
+        bool oneturn;
 
     public:
         //default constructor
@@ -37,6 +38,8 @@ class Game
 
         //starts game
         void start();
+        //checks win condition
+        int win();
 };
 
 

@@ -15,7 +15,7 @@
 #define BOARD_H
 
 #include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
 
 class Board
@@ -32,6 +32,8 @@ class Board
         Board(string moves);
 
         void displayBoard();
+        //get slot on board
+        char getSlot(int row, int col);
 
         bool place(int col, bool oneturn);
 };

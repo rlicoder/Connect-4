@@ -8,8 +8,9 @@
  * File:   Player.h
  * Author: Drake
  *
- * Created on March 21, 2021, 6:23 PM
+ * Created on March 21, 2021, 7:58 PM
  */
+
 #ifndef PLAYER_H
 #define PLAYER_H
 
@@ -32,4 +33,5 @@ class Player
 
 };
 
-#endif
+#endif /* PLAYER_H */
+
