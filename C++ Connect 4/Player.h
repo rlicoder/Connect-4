@@ -17,6 +17,9 @@ class Player
         //default
         Player();
 
+	//hash constructor, get data from database
+	Player(string);
+
 };
 
 #endif /* PLAYER_H */
