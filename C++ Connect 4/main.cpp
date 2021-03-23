@@ -9,5 +9,6 @@ int main()
     
     game.start();
 
+    cout << game.getMoves() << endl;
     return 0;
 }

@@ -53,7 +53,7 @@ char Board::getSlot(int row, int col)
 bool Board::place(int col, bool oneturn)
 {
     bool set = false;
-    for (int i = 6; i >= 0; i--)
+    for (int i = this->getRowSze()-1; i >= 0; i--)
     {
         if (board[i][col] != ' ')
         {

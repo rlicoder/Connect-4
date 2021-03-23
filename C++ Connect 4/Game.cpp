@@ -6,6 +6,7 @@ using namespace std;
 Game::Game() : board()
 {
     this->gamestate = true;
+    this->moves = "";
 }
 
 Game::Game(string moves) : board(moves)
@@ -22,12 +23,17 @@ void Game::start()
         cout << "Choose your column, " << (oneturn ? "Player 1 " : "Player 2 ") << endl;
 	int col;
 	cin >> col;
-	board.place(col, oneturn);
+	while (!board.place(col, oneturn))
+	{
+	    cout << "Try again: ";
+	    cin >> col;
+	}
+	this->addMove(col + '0');
+        this->oneturn = !this->oneturn;
         if (this->win()>0)
 	{
             this->gamestate = false;
 	}
-        this->oneturn = !this->oneturn;
     }
 }
 
@@ -99,6 +105,7 @@ int Game::win()
     }
     //check if the board is full
     bool full = true;
+    board.displayBoard();
     for (int i = 0; i < board.getRowSze(); i++)
     {
 	for (int j = 0; j < board.getColSze(); j++)
@@ -110,5 +117,16 @@ int Game::win()
 	    }
 	}
     }
-    return full ? 3 : win;
+    return (full ? 3 : win);
+}
+
+string Game::getMoves()
+{
+    return this->moves;
+}
+
+
+void Game::addMove(char move)
+{
+    this->moves += move;
 }

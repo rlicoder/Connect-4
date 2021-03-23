@@ -13,6 +13,7 @@ class Game
         Board board;
         Player player1;
         Player player2;
+	string moves;
         bool gamestate;
         bool oneturn;
 
@@ -27,6 +28,10 @@ class Game
         void start();
         //checks win condition
         int win();
+
+	string getMoves();
+
+	void addMove(char move);
 };
 
 

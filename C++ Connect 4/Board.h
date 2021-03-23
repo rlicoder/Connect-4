@@ -9,8 +9,8 @@ class Board
 {
     private:
         vector<vector<char>> board;
-        const int rowSze = 7;
-        const int colSze = 6;
+        const int rowSze = 6;
+        const int colSze = 7;
     public:
         //default constructor
         Board();
