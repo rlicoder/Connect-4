@@ -1,15 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Board.cpp
- * Author: Drake
- * 
- * Created on March 21, 2021, 6:31 PM
- */
 #include <bits/stdc++.h>
 
 #include "Board.h"
@@ -18,6 +6,7 @@ using namespace std;
 
 Board::Board()
 {
+    board = vector<vector<char>> (rowSze, vector<char>(colSze));
     for (int i = 0; i < rowSze; i++)
     {
         for (int j = 0; j < colSze; j++)
@@ -29,6 +18,7 @@ Board::Board()
 
 Board::Board(string moves)
 {
+    board = vector<vector<char>> (rowSze, vector<char>(colSze));
     bool oneturn = true;
     for (int i = 0; i < (int)moves.size(); i++)
     {
@@ -51,15 +41,19 @@ void Board::displayBoard()
 }
 
 // Will get the slot on the board
-char Board::getSlot(int row, int col) {
-    if (row < rowSze && col < colSze)
+char Board::getSlot(int row, int col) 
+{
+    if (row < rowSze && col < colSze && row >= 0 && col >= 0)
+    {
+	//throw an error.
+    }
     return board[row][col];
 }
 
 bool Board::place(int col, bool oneturn)
 {
     bool set = false;
-    for (int i = 5; i >= 0; i--)
+    for (int i = 6; i >= 0; i--)
     {
         if (board[i][col] != ' ')
         {
@@ -75,3 +69,12 @@ bool Board::place(int col, bool oneturn)
     return set;
 }
 
+int Board::getColSze()
+{
+    return this->colSze;
+}
+
+int Board::getRowSze()
+{
+    return this->rowSze;
+}

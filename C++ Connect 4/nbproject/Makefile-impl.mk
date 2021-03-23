@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Connect4_V3
+PROJECTNAME=C++ Connect 4
 
 # Active Configuration
 DEFAULTCONF=Debug

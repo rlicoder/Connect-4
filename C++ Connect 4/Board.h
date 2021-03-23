@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Board.h
- * Author: Drake
- *
- * Created on March 21, 2021, 6:31 PM
- */
-
 #ifndef BOARD_H
 #define BOARD_H
 
@@ -22,8 +9,8 @@ class Board
 {
     private:
         vector<vector<char>> board;
-        int rowSze = 7;
-        int colSze = 6;
+        const int rowSze = 7;
+        const int colSze = 6;
     public:
         //default constructor
         Board();
@@ -36,6 +23,10 @@ class Board
         char getSlot(int row, int col);
 
         bool place(int col, bool oneturn);
+
+	int getRowSze();
+
+	int getColSze();
 };
 
 
