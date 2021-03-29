@@ -6,16 +6,22 @@
 
 # Macros
 TOP=`pwd`
-CND_PLATFORM=MinGW-Windows
-CND_CONF=Release
+CND_PLATFORM=Cygwin-Windows
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
+<<<<<<< HEAD:C++ Connect 4/nbproject/Package-Debug.bash
 OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c___connect_4
 OUTPUT_BASENAME=c___connect_4
 PACKAGE_TOP_DIR=c++connect4/
+=======
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/readandwrite
+OUTPUT_BASENAME=readandwrite
+PACKAGE_TOP_DIR=readandwrite/
+>>>>>>> 0d66699745f3b5c74ba2b47106c7a217e08ced6c:readAndWrite/nbproject/Package-Debug.bash
 
 # Functions
 function checkReturnCode
@@ -60,15 +66,25 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
+<<<<<<< HEAD:C++ Connect 4/nbproject/Package-Debug.bash
 makeDirectory "${NBTMPDIR}/c++connect4/bin"
+=======
+makeDirectory "${NBTMPDIR}/readandwrite/bin"
+>>>>>>> 0d66699745f3b5c74ba2b47106c7a217e08ced6c:readAndWrite/nbproject/Package-Debug.bash
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
+<<<<<<< HEAD:C++ Connect 4/nbproject/Package-Debug.bash
 rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/c++connect4.tar
 cd ${NBTMPDIR}
 tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/c++connect4.tar *
+=======
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/readandwrite.tar
+cd ${NBTMPDIR}
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/readandwrite.tar *
+>>>>>>> 0d66699745f3b5c74ba2b47106c7a217e08ced6c:readAndWrite/nbproject/Package-Debug.bash
 checkReturnCode
 
 # Cleanup

@@ -18,10 +18,7 @@ class Player
         Player();
 
 	//hash constructor, get data from database
-	//Player(string);
-        string getName() { return name; }
-        int getWins() { return wins; }
-        int getLoss() { return losses; }
+	Player(string);
 
 };
 

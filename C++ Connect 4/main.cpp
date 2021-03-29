@@ -5,11 +5,10 @@ using namespace std;
 
 int main()
 {
-    Game *game = new Game();
+    Game game;
     
-    game->start();
+    game.start();
 
-    cout << game->getMoves() << endl;
-    delete game;
+    cout << game.getMoves() << endl;
     return 0;
 }
