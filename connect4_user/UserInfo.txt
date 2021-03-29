@@ -1,6 +1,0 @@
-admin1
-wzn
-admin2
-wzn
-admin
-password
