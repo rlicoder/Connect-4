@@ -1,0 +1,3 @@
+/mnt/c/Users/rlngu/Desktop/Connect-4/C++_only/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/rlngu/Desktop/Connect-4/C++_only/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rlngu/Desktop/Connect-4/C++_only/CMakeFiles/game_exe.dir
