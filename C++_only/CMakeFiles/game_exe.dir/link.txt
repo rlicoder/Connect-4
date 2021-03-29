@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/game_exe.dir/Board.o CMakeFiles/game_exe.dir/Game.o CMakeFiles/game_exe.dir/main2.o  -o game_exe 
