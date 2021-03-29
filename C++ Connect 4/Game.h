@@ -10,7 +10,7 @@ using namespace std;
 class Game
 {
     private:
-        Board board;
+        Board *board; // Pointer to board object
         Player player1;
         Player player2;
 	string moves;
@@ -23,6 +23,9 @@ class Game
 
         //moves constructor
         Game(string moves);
+        
+        // Destroyer
+        ~Game();
 
         //starts game
         void start();

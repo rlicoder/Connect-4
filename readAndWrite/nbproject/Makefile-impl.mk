@@ -24,7 +24,11 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
+<<<<<<< HEAD:C++ Connect 4/nbproject/Makefile-impl.mk
+PROJECTNAME=C++ Connect 4
+=======
 PROJECTNAME=readAndWrite
+>>>>>>> 0d66699745f3b5c74ba2b47106c7a217e08ced6c:readAndWrite/nbproject/Makefile-impl.mk
 
 # Active Configuration
 DEFAULTCONF=Debug
