@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Board.o \
 	${OBJECTDIR}/Game.o \
+	${OBJECTDIR}/GameHist.o \
 	${OBJECTDIR}/Player.o \
 	${OBJECTDIR}/main.o
 
@@ -74,6 +75,11 @@ ${OBJECTDIR}/Game.o: Game.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Game.o Game.cpp
+
+${OBJECTDIR}/GameHist.o: GameHist.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GameHist.o GameHist.cpp
 
 ${OBJECTDIR}/Player.o: Player.cpp
 	${MKDIR} -p ${OBJECTDIR}

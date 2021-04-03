@@ -11,7 +11,7 @@ Game::Game() : board()
 
 Game::Game(string moves) : board(moves)
 {
-
+    
 }
 
 void Game::start()
@@ -35,6 +35,7 @@ void Game::start()
             this->gamestate = false;
 	}
     }
+    board.displayBoard();
 }
 
 int Game::win()
