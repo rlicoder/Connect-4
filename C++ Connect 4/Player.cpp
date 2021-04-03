@@ -2,6 +2,7 @@
 
 Player::Player() 
 {
+<<<<<<< HEAD
     //initialize everything to blanks 
     this->name = "";
     this->wins = 0;
@@ -48,6 +49,14 @@ void Player::setLosses(int slosses)
 void Player::setName(int sname)
 {
     this->name = sname;
+=======
+    // Interface to input player info
+    cout << "Input player name: ";
+    cin >> this->name;
+    // Initialize wins and losses
+    wins = 0;
+    losses = 0;
+>>>>>>> 6c1618d0eac581bd902df4610e9ea07f5e4f9ede
 }
 
 void Player::setEncryption_Key(string sencryption_key)

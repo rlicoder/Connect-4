@@ -18,6 +18,7 @@ class Player
     public:
         //default
         Player();
+<<<<<<< HEAD
 
 	//basic login
 	//hash constructor, get data from database
@@ -38,6 +39,16 @@ class Player
 
 
 
+=======
+	//hash constructor, get data from database
+	Player(string);
+        // Get player name
+        string getName() { return name; }
+        // Get player's wins
+        int getWins() { return wins; }
+        // Get player's losses
+        int getLoss() { return losses; }
+>>>>>>> 6c1618d0eac581bd902df4610e9ea07f5e4f9ede
 };
 
 #endif /* PLAYER_H */
