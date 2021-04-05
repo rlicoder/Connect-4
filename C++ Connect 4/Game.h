@@ -11,8 +11,8 @@ class Game
 {
     private:
         Board *board; // Pointer to board object
-        Player player1;
-        Player player2;
+        Player *player1;
+        Player *player2;
 	string moves;
         bool gamestate;
         bool oneturn;
@@ -20,12 +20,10 @@ class Game
     public:
         //default constructor
         Game();
-
+        // Destructor
+        virtual ~Game(); // Unexplained error, temporarily disabled
         //moves constructor
-        Game(string moves);
-        
-        // Destroyer
-        ~Game();
+        //Game(string moves);
 
         //starts game
         void start();

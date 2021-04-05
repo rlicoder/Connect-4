@@ -1,6 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include "GameHist.h"
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -11,20 +12,29 @@ class Player
         string name;
         int wins;
         int losses;
-        vector<string> gameHist;
+        vector<GameHist> history;
+	string encryption_key;
 
     public:
         //default
         Player();
+
+	//basic login
 	//hash constructor, get data from database
 	Player(string);
-        // Get player name
-        string getName() { return name; }
-        // Get player's wins
-        int getWins() { return wins; }
-        // Get player's losses
-        int getLoss() { return losses; }
+
+	//get func
+	string getName();
+	string getEncryption_Key();
+	int getWins();
+	int getLosses();
+
+	//set func
+        void setWins(int);
+	void setLosses(int);
+	void setName(string);
+	void setEncryption_Key(string);
+	
 };
 
 #endif /* PLAYER_H */
-

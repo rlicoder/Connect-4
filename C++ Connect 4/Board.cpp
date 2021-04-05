@@ -52,6 +52,10 @@ char Board::getSlot(int row, int col)
 
 bool Board::place(int col, bool oneturn)
 {
+    if (col < 0 || col > 6)
+    {
+	return false;
+    }
     bool set = false;
     for (int i = this->getRowSze()-1; i >= 0; i--)
     {
@@ -69,12 +73,12 @@ bool Board::place(int col, bool oneturn)
     return set;
 }
 
-int Board::getColSze()
+const int Board::getColSze()
 {
     return this->colSze;
 }
 
-int Board::getRowSze()
+const int Board::getRowSze()
 {
     return this->rowSze;
 }
