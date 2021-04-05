@@ -30,22 +30,11 @@ class Player
 	int getLosses();
 
 	//set func
-	void setName();
-	void setEncryption_Key();
-	void setWins();
-	void setLosses();
-
-
-
-
-	//hash constructor, get data from database
-	Player(string);
-        // Get player name
-        string getName() { return name; }
-        // Get player's wins
-        int getWins() { return wins; }
-        // Get player's losses
-        int getLoss() { return losses; }
+        void setWins(int);
+	void setLosses(int);
+	void setName(string);
+	void setEncryption_Key(string);
+	
 };
 
 #endif /* PLAYER_H */

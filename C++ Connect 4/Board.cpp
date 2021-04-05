@@ -73,12 +73,12 @@ bool Board::place(int col, bool oneturn)
     return set;
 }
 
-int Board::getColSze()
+const int Board::getColSze()
 {
     return this->colSze;
 }
 
-int Board::getRowSze()
+const int Board::getRowSze()
 {
     return this->rowSze;
 }

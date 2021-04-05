@@ -8,10 +8,12 @@ int main()
 {
     Game game;
     
-    game.start();
-
+    game.start(); // Round 1
+    
+    game.start(); // Round 2
+    
     fstream db;
-    db.open("database.txt", "r");
+    db.open("database.txt");
     int numPlayers;
     db >> numPlayers;
     vector<Player> players (numPlayers);

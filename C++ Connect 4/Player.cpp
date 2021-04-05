@@ -2,7 +2,7 @@
 
 Player::Player() 
 {
-<<<<<<< HEAD
+//<<<<<<< HEAD
     //initialize everything to blanks 
     this->name = "";
     this->wins = 0;
@@ -46,7 +46,7 @@ void Player::setLosses(int slosses)
     this->losses = slosses;
 }
 
-void Player::setName(int sname)
+void Player::setName(string sname)
 {
     this->name = sname;
 }

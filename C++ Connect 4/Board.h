@@ -24,9 +24,9 @@ class Board
 
         bool place(int col, bool oneturn);
 
-	int getRowSze();
+	const int getRowSze();
 
-	int getColSze();
+	const int getColSze();
 };
 
 
