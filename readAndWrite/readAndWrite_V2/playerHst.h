@@ -4,21 +4,19 @@
  * and open the template in the editor.
  */
 
-/* 
- * File:   playerHst.h
- * Author: johnn
- *
- * Created on April 4, 2021, 4:17 PM
- */
-
 #ifndef PLAYERHST_H
 #define PLAYERHST_H
 
+#include<fstream>
+#include<iostream>
+#include<string>
 #include<cstdlib>
 #include<iostream>
+#include<ctime>
+
 using namespace std;
 
-class playerH{
+class playerHst{
     private:
         int *mResult;
         string pName1, pName2;

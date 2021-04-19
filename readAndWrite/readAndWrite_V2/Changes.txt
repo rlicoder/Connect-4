@@ -1,1 +1,2 @@
 - added class and header file
+- fixed errors
