@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cstring>
 #include <cstdlib>
+#include <string>
 
 using namespace std; 
 
@@ -22,14 +23,28 @@ void regest(){
     int flag = 0;
     int i = 0;
     int j = 0;
+    int length;
     ifstream in("UserInfo.txt", ios::in);
     ofstream out("UserInfo.txt", ios::app);
 
     cout << "Enter user name:\n";
     cin >> inf.username;
+    length = strlen(inf.username);
+    if(!isalpha(inf.username[0])){
+        cout << "Username must start with a letter";
+        return;
+    }
+    else if(length > 18 || length < 6){
+        cout << "Please enter username between 6-18 length";
+        return;
+    }
     cout << "Enter password: \n";
     cin >> inf.password;
-
+    length = strlen(inf.password);
+    if(length > 18 || length < 6){
+        cout << "Please enter password between 6-18 length";
+        return;
+    }
     while (getline(in, temp))//read data and save to temp
     {
         i++;
@@ -171,7 +186,6 @@ void Edit(){
     }
     file.close();
     out.close();
-    system("del temp.txt");
 }
 void menu(){
     int c;

@@ -8,11 +8,12 @@ using namespace std;
 class GameHist
 {
     private:
-	string moves;
-	string playerO;
-	string playerX;
+	string moves;  // Holds moves as a string
+	string playerO; // Holds player O name
+	string playerX; // Holds player X name
     
     public:
+        // Set the game history
 	GameHist(string po_name, string px_name, string moveHist);
 
     
