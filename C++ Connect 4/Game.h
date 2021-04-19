@@ -16,6 +16,7 @@ class Game
 	string moves;
         bool gamestate;
         bool oneturn;
+        char cont;
 
     public:
         //default constructor
@@ -33,8 +34,8 @@ class Game
 	string getMoves();
 
 	void addMove(char move);
+        void menu();
 };
 
 
 #endif /* GAME_H */
-

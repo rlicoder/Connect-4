@@ -138,3 +138,12 @@ void Game::addMove(char move)
 {
     this->moves += move;
 }
+
+void Game::menu() 
+{
+    do{
+        this->start();
+        cout << "\nStart new game (y/n): ";
+        cin >> this->cont;
+    } while (this->cont=='y');
+}

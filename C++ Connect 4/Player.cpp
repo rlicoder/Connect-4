@@ -2,7 +2,6 @@
 
 Player::Player() 
 {
-//<<<<<<< HEAD
     //initialize everything to blanks 
     this->name = "";
     this->wins = 0;
