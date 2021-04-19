@@ -1,11 +1,10 @@
-#include<iostream>
-#include<fstream>
-#include<string>
-#include<ctime>
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 #include"playerHst.h"
-
-using namespace std;
 
 // Function Prototype
 void menu(string,bool);
@@ -18,14 +17,16 @@ int totalL(string);
 int main() {
     string username="test";
     string username1="test1";
+    string chosenN;
     bool stat = true;
-    
     srand(static_cast<unsigned int>(time(0)));
     
     playerHst history;
     history.setName(username,username1);
     
-    //menu(username,stat);
+    cout<<"Name to look up: ";
+    cin>>chosenN;
+    menu(chosenN,stat);
     
     return 0;
 }

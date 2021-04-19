@@ -5,9 +5,7 @@
  */
 
 #include"playerHst.h"
-#include<string>
-#include<fstream>
-#include<iostream>
+
 
 // Generate a random History
 playerHst::playerH(int size){
@@ -31,16 +29,16 @@ string playerHst::getTime(){
 }
 
 void playerHst::setName(string n1, string n2){
-    this->pName1=n1;
-    this->pName2=n2;
+    pName1=n1;
+    pName2=n2;
 }
 
 string playerHst::getName1(){
-    return this->pName1;
+    return pName1;
 }
 
 string playerHst::getName2(){
-    return this->pName2;
+    return pName2;
 }
 
 // Print the specific player's history
