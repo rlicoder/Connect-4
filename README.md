@@ -2,6 +2,7 @@
 
 Roles of each member:
 | Members Responsible |	Task |
+|---------------------|------|
 | Juan Yin	| Documentation| 
 | Royce	C++ | Model Code| 
 | Kevin/Yulong Tang	| Reading/Writing Files| 
