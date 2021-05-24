@@ -6,9 +6,10 @@
 
 
 function fnLogin() {
-    var name = document.getElementById("uname")
-    var pass = document.getElementById("upass")
-    var error = document.getElementById("error_box")
+    var name = document.getElementById("uname");
+    var pass = document.getElementById("upass");
+    var repeat = document.getElementById("repeat");
+    var error = document.getElementById("error_box");
     var isError = true;
     if (name.value.length > 18 || name.value.length < 6) {
         error.innerHTML = "Please enter username between 6-18 length";
@@ -25,11 +26,15 @@ function fnLogin() {
             return;
         }
     }
-
     if (pass.value.length > 18 || pass.value.length < 6) {
-        error.innerHTML = "Please enter password between 6-18 length"
+        error.innerHTML = "Please enter password between 6-18 length";
         isError = false;
         return;
     }
-    window.alert("Regist successful")
+    else if(repeat.value !== pass.value){
+        error.innerHTML = "Entered passwords do not match";
+        return;
+    }
+    window.alert("Regist successful");
+    history.go(-3);
 }
