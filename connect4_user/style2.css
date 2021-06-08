@@ -17,8 +17,10 @@ a:hover { color:#000; }
 .shell { width:980px; margin:0 auto; }
 
 
-h1 { font-family: "Trebuchet MS", Arial, sans-serif; padding-bottom:8px; }
+h1 { font-family: Verdana, Arial, sans-serif; padding-bottom:8px; }
 h1 { font-size:18px; line-height:22px; }
+h2 { font-family: Verdana, Arial, sans-serif; padding-bottom:8px; }
+h2 { font-size:18px; line-height:22px; }
 
 
 #header { background:#364f86; height:82px; }
@@ -33,7 +35,7 @@ h1 { font-size:18px; line-height:22px; }
 
 
 #navigation { height:31px; }
-#navigation ul{ list-style-type: none; padding-top:8px; font-size:11px; }
+#navigation ul{ list-style-type: none; padding-top:8px; font-size:15px; }
 #navigation ul li{ float:left; display:inline; margin-right:5px;}
 #navigation ul li a,
 #navigation ul li a span { float:left; display:inline; height:31px; padding:0 0 0 8px; background-color: white; }
@@ -50,8 +52,32 @@ h1 { font-size:18px; line-height:22px; }
 
 #content { padding:10px 0 20px 0;}
 #content p{ padding-bottom:15px;}
-#content ol,
 #content ul{ padding: 0 0 15px 25px;}
 #content li{ padding-bottom:3px; }
 #content a { text-decoration: underline;}
 #content a:hover { text-decoration: none;}
+
+.message {color:#3d8b26; width:630px; height:50px; text-align: center; margin:15px auto 15px auto; font-size:26px;}
+
+#view{
+    position:relative;
+    left:200px;
+    width:80%;
+    border:1px solid black;
+}
+#view th, td{
+    padding:1px;
+    border:1px solid black;
+}
+
+#title{
+    font-size: 25px;
+    color:#3d8b26;
+}
+
+.input_box{
+    width:350px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}

@@ -26,7 +26,8 @@
     $result = $conn->query($query);
     
     if($result->num_rows > 0){
-        echo "<script> alert('Login successful'); </script>";
+        echo $result->num_rows;
+        echo "<script> alert('Login successful'); window.location.href='game.html'; </script>";
     }
     else{
         echo "<script> alert('Wrong username/password');window.location.href='index.php'; </script>";

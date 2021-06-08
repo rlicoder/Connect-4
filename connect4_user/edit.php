@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="style2.css" type="text/css" media="all" />
 </head>
 <body>
-
+    <form action="edit_user.php" method="post">
 	<div id="header">
 		<div class="shell">
 			
@@ -25,11 +25,17 @@
                                     <li><a href="edit.php" class="active"><span>Edit</span></a></li>
 				</ul>
 			</div>
-                    		<div class="message">
-                                    <p>Welcome to User Management</p><br>
-                            <p>Please click navigation bar to continue</p>
-		</div>
 		</div>
 	</div>
+    <div>
+        <p align="center"><big>Please enter the username or email to edit</big></p><br><br>
+    </div>
+    <div class="input_box" align="center">Username/Email
+        <input id="edit" type="text" name="edit_info">
+    </div>
+        <div align="center">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
 </html>
